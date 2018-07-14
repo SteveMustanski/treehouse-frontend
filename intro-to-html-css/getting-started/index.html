@@ -10,36 +10,43 @@
   <div>
     <header>
       <h1>Experience VR</h1>
-      <p>A simple blog about VR experineces<p>
+      <p>A <em>simple</em> blog about VR experineces<p>
 
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#article">Articles</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
     </header>
+    <img src="img/featured.jpg" alt="virtual reality user">
     <div>
-    <p>Virtual Reality is becoming well known as a form of entertainment, but it's also finding 
+    <p><strong>Virtual Reality</strong> is becoming well known as a form of entertainment, but it's also finding 
       its way into fields like education, industrial design, healthcare and so much more!</p>
     </div>
     <a href="https://teamtreehouse.com/vr" target="_blank">Start Your VR Journey</a>
     <main>
-      <section>
+      <section id="about">
         <h2>About this site</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula metus in bibendum laoreet. 
           Aenean libero est, egestas eu eros pretium, sodales iaculis est.</p>
+          <figure>
+            <img src="img/vr-space.jpg" alt="user experiencing space in vr">
+            <figcaption>
+                VR users can explore far away places
+            </figcaption>
+          </figure> 
       </section>
-      <section>
+      <section id="article">
         <h2>Latest VR Articles</h2>
         <article>
           <h3>How Schools Use Virtual Reality to Improve Education</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices euismod turpis eget porta. 
         Etiam nulla massa, pretium et massa nec, ornare dignissim nisi.</p>
-          <a href="articles/2018/article.html">Read More</a>
+          <a href="articles/2018/article.html#vr-article">Read More</a>
           <footer>Published: June 12, 2017</footer>
         </article>
         <article>
@@ -50,9 +57,14 @@
           <footer>Published: June 12, 2017</footer>
         </article>
       </section>
-      <section>
+      <section id="contact">
         <h2>Contact</h2>
-        <p>Email us at coolvrexperiences.gmail.com</p>
+        <p><strong>Email:</strong> coolvrexperiences.gmail.com</p>
+        <address>
+          Experience VR<br>
+          2018 VR Way<br>
+          Richmond, VA
+        </address>
       </section>
     </main>
     <aside>
@@ -65,6 +77,7 @@
         <li>Use VR for teleconferencing and social media</li>
       </ol>
       <footer>
+        <hr>
       <blockquote>"Virtual reality was once the dream of science fiction. But the internet was also once a dream, 
         and so were computers and smartphones. The future is coming." 
         - <cite><a href="https://www.facebook.com/zuck/posts/10101319050523971">Mark Zuckerberg</a></cite></blockquote>
@@ -72,7 +85,7 @@
     </aside>
 
     <footer>
-      <p>&copy;2018 Experience VR, The Blog</p>
+      <p><small>&copy;2018 Experience VR, The Blog</small></p>
     </footer>
  </div>   
 </body>
