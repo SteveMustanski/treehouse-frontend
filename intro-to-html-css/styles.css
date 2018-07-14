@@ -207,5 +207,11 @@ a.social:hover {
     letter-spacing: 1px;
   }
 
+  .card-title {
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 5px;
+  }
+
 }
 
