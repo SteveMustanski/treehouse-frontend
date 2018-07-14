@@ -201,6 +201,11 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
+  
+  h3 {
+    color: blue;
+    letter-spacing: 1px;
+  }
 
 }
 
