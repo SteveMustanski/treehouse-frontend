@@ -11,11 +11,15 @@ body {
 
 .title {
   color: white;
-  font-size: 26px;
+  font-size: 1.625em; /* 26px / 16px, 16px is the default font size */
+}
+
+.primary-content, secondary-content {
+  width: 60%;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 5.625em; /* 90px / 16px */
   color: white;
 }
 
