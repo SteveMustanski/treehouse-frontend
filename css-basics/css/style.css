@@ -3,8 +3,13 @@ body {
   margin: 0;
 }
 
-header {
+.main-header {
   background-color: orange;
+}
+
+.title {
+  color: white;
+  font-size: 26px;
 }
 
 h1 {
@@ -19,4 +24,18 @@ h2 {
 h3 {
   font-size: 20px;
   color: #48525c;
+}
+
+.primary-content {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgray; 
+}
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid orange;
 }
