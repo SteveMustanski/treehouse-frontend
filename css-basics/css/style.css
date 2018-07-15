@@ -1,5 +1,9 @@
 /* This is a comment */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #878787;
   margin: 0;
@@ -9,6 +13,12 @@ body {
 
 .main-header {
   background-color: #ffa949;
+  padding-top: 170px;
+  background-size: cover;
+  height: 850px;
+  background-image: url('../img/mountains.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title {
@@ -17,8 +27,11 @@ body {
 }
 
 .primary-content, .secondary-content {
-  width: 60%;
+  width: 75%;
+  max-width: 900px;
   margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 h1 {
@@ -41,6 +54,12 @@ h3 {
 
 .primary-content, .main-header {
   text-align: center;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .t-border {
@@ -76,6 +95,7 @@ a:focus {
   border-bottom: 3px solid;
   padding: 0 9px 3px;
   margin-top: 20px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 
@@ -91,4 +111,8 @@ a:focus {
   background-color: #434a52;
   padding: 18% 24%;
   margin: 10px 60px;
+}
+
+.arrow {
+  width: 50px;
 }
