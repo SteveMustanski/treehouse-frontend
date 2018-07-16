@@ -38,11 +38,12 @@ h1 {
   font-size: 5.625rem; /* 90px / 16px */
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+  text-shadow: 5px 8px 10px #222
 }
 
 h2 {
   font-size: 53px;
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: .5em /* 26px */
 }
 
@@ -110,7 +111,13 @@ a:focus {
   border: 10px solid #ffa949;
   background-color: #434a52;
   padding: 18% 24%;
-  margin: 10px 60px;
+  margin: 105px 0 60px;
+  background-image: url(../img/bear.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 15px 15px 10px rgba(0,0,0, .8);
+  border-radius: 10px;
 }
 
 .arrow {
