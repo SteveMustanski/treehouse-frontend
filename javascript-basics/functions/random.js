@@ -1,10 +1,9 @@
-const alertRandom = () =>  {
+const getRandomNumber = () =>  {
   let randomNumber = Math.floor(Math.random() * 6) + 1;
-  alert(randomNumber);
+  return randomNumber;
 };
 
-alertRandom();
-alertRandom();
-alertRandom();
+alert(getRandomNumber());
+
 
 
