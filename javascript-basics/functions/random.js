@@ -1,9 +1,9 @@
-const getRandomNumber = () =>  {
-  let randomNumber = Math.floor(Math.random() * 6) + 1;
+const getRandomNumber = (upperNum) =>  {
+  let randomNumber = Math.floor(Math.random() * upperNum) + 1;
   return randomNumber;
 };
 
-alert(getRandomNumber());
+alert(getRandomNumber(4));
 
 
 
