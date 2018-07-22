@@ -125,11 +125,26 @@ a {
 .name {
   float:left;
 }
-
+/* clear fix to have the header not collapse due to floated nav and heading */
 .clearfix::after {
   content:"";
   display:table;
   clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.primary {
+  width: 40%;
+}
+
+.secondary {
+  width: 60%;
+
 }
 
 }
