@@ -12,6 +12,21 @@ body {
 
 .name {
   margin: 0;
+  margin-right: 50px;
+  display: block;
+}
+
+.name, .main-nav li {
+  text-align: center;
+  background: #fff;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.name a, .main-nav a {
+  padding: 10px 15px;
+  display: block;
 }
 
 .container {
@@ -20,7 +35,7 @@ padding-right: 1em;
 }
 
 a { 
-	color: #fff;
+	color: black;
 	text-decoration: none;
 }
 
@@ -33,6 +48,7 @@ a {
 .main-header {
   background: #3acec2;
   padding: 1em 0 0;
+  text-align: center;
 }
 
 .main-footer {
@@ -55,5 +71,22 @@ a {
   .wrap {
     /* calculation: 100vh - the hieght of the footer to stick it to the bottom */
     min-height: calc(100vh - 121px);
+  }
+
+  .name, .main-nav li {
+    display: inline-block;
+  }
+
+  .main-nav {
+    display: inline-block;
+    margin-right: 0;
+  }
+  .column1, .column2 {
+    width: 50%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 2em;
   }
 }
