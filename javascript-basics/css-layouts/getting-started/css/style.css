@@ -1,15 +1,22 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+* {
+box-sizing: border-box;
+}
 
 body {
 	line-height: 1.6;
   color: #3a3a3a;
 }
 
-.wrapper {
-  width: 70%;
-  margin: auto;
+.name {
+  margin: 0;
+}
+
+.container {
+padding-left: 1em;
+padding-right: 1em;
 }
 
 a { 
@@ -24,13 +31,29 @@ a {
 /* ---- Layout Containers ---- */
 
 .main-header {
-	background: #3acec2;
+  background: #3acec2;
+  padding: 1em 0 0;
 }
 
 .main-footer {
 	padding: 2em 0;
-	background: #d9e4ea;
+  background: #d9e4ea;
+  text-align: center;
 }
 
 /* ---- Page Elements ---- */
 
+
+/* media queries */
+
+@media (min-width: 769px) {
+  .container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+  } 
+  .wrap {
+    /* calculation: 100vh - the hieght of the footer to stick it to the bottom */
+    min-height: calc(100vh - 121px);
+  }
+}
