@@ -1,19 +1,13 @@
 /* ================================= 
-  Flexbox
+  Media Queries
 ==================================== */
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 450px;
+@media (min-width: 769px) {
+  
+	
+
 }
 
-.item {
-flex: 1 300px;
+@media (min-width: 1025px) {
+
 }
-
-.item-2 {
-  flex-grow: 2;
-}
-
-
