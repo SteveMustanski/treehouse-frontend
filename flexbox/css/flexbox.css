@@ -16,9 +16,16 @@
   }
 
   .col {
-    flex: 1;
+    flex: 1 50%;   /* 50% is the flex basis which is the second parameter */
   }
 
+  .row {
+    flex-wrap: wrap; 
+  }
+
+  .secondary {
+    order: -1;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -30,6 +37,14 @@
 
   .primary {
     flex: 2;
+  }
+
+  .col {
+    flex-basis: 0;
+  }
+
+  .primary {
+    flex-grow: 1.4;
   }
 
 }
