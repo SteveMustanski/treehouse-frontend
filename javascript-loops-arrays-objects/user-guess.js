@@ -3,6 +3,7 @@ let upper = 10;
 let targetNumber = getRandomNumber(upper)
 let guess;
 let attempts = 0;
+let correctGuess = false;
 
 function getRandomNumber(upper) {
   return Math.floor(Math.random() * upper) + 1;
@@ -14,7 +15,10 @@ function getRandomNumber(upper) {
 do {
   guess = prompt(`Guess number between 1 and 10`);
   attempts += 1;
-} while (parseInt(guess) !== targetNumber);
+  if (parseInt(guess) === targetNumber) {
+    correctGuess = true;
+  }
+} while (!correctGuess);
 
 // print out the results
 document.write(`The random number was: ${targetNumber}`);
