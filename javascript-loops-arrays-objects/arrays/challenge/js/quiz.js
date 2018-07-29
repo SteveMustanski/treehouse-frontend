@@ -1,6 +1,7 @@
 
 function print(message) {
-  document.write(message);
+  let outputDiv = document.getElementById('output');
+  outputDiv.innerHTML = message;
 }
 
 // set up questions and answers
