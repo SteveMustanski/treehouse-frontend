@@ -1,5 +1,6 @@
 const myList = document.getElementsByTagName('li');
-const errorNotPurple = document.getElementsByClassName('error-not-purple');
+const errorNotPurple = document.querySelectorAll('.error-not-purple');
+const even = document.querySelectorAll('li:nth-child(even)');
 
 
 for (let i = 0; i < myList.length; i++) {
@@ -12,4 +13,7 @@ for (let i = 0; i < errorNotPurple.length; i++) {
   
 }
 
-
+for (let i = 0; i < even.length; i++) {
+  even[i].style.backgroundColor = 'lightgray';
+  
+}
