@@ -37,7 +37,7 @@ let students = [
     
   };
 
-  let message = '';
+let message = '';
 for (let i = 0; i < students.length; i++) {
   let student = students[i];
   for (prop in student) {
