@@ -21,6 +21,10 @@ toggle.addEventListener('click', () => {
 })
 
 addItemButton.addEventListener('click', () => {
+  // select the first ul item in the array 
+  let ul = document.getElementsByTagName('ul')[0];
   let li = document.createElement('li');
   li.textContent = addItemInput.value;
+  ul.appendChild(li);
+  addItemInput.value = '';
 })
