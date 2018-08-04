@@ -6,18 +6,17 @@ const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('button.addItemButton')
 const removeItemButton = document.querySelector('button.removeItemButton')
+const listUl = document.querySelector('ul');
 
-list.addEventListener('mouseover', (event) => {
-  if (event.target.tagName == 'LI') {
-    event.target.textContent = event.target.textContent.toUpperCase();
+listUl.addEventListener('click', (event) => {
+  if (event.target.tagName == 'BUTTON') {
+    let li = event.target.parentNode;
+    let ul = li.parentNode;
+    ul.removeChild(li);
   }
 })
 
-list.addEventListener('mouseout', (event) => {
-  if (event.target.tagName == 'LI') {
-    event.target.textContent = event.target.textContent.toLowerCase();
-  }
-})
+
 
 
 descriptionButton.addEventListener('click', () => {
