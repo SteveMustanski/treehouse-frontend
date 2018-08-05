@@ -5,19 +5,24 @@ const descriptionP = document.querySelector('p.description');
 const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('button.addItemButton')
-const removeItemButton = document.querySelector('button.removeItemButton')
 const listUl = document.querySelector('ul');
 
 listUl.addEventListener('click', (event) => {
   if (event.target.tagName == 'BUTTON') {
-    let li = event.target.parentNode;
-    let ul = li.parentNode;
-    ul.removeChild(li);
+    if (event.target.className == 'remove') {
+      let li = event.target.parentNode;
+      let ul = li.parentNode;
+      ul.removeChild(li);
+    }
+    if (event.target.className == 'up') {
+      let li = event.target.parentNode;
+      let ul = li.parentNode;
+      let preLi = li.previousElementSibling;
+      ul.insertBefore(li, preLi);
+
+    }
   }
 })
-
-
-
 
 descriptionButton.addEventListener('click', () => {
   descriptionP.innerHTML = descriptionInput.value + ':';
@@ -44,9 +49,3 @@ addItemButton.addEventListener('click', () => {
   addItemInput.value = '';
 })
 
-removeItemButton.addEventListener('click', () => {
-  let ul = document.getElementsByTagName('ul')[0];
-  // select the last child
-  let lastLi = document.querySelector('li:last-child');
-  ul.removeChild(lastLi);
-})
