@@ -18,8 +18,9 @@ listUl.addEventListener('click', (event) => {
       let li = event.target.parentNode;
       let ul = li.parentNode;
       let preLi = li.previousElementSibling;
-      ul.insertBefore(li, preLi);
-
+      if (preLi) {
+        ul.insertBefore(li, preLi);
+      }
     }
   }
 })
