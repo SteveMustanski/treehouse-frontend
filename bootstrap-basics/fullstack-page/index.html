@@ -12,7 +12,7 @@
     crossorigin="anonymous">
 </head>
 
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
 
   <!-- nav bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
@@ -24,9 +24,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#home">Home
-            <span class="sr-only">(current)</span>
-          </a>
+          <a class="nav-item nav-link" href="#home">Home</a>
           <a class="nav-item nav-link" href="#about">About</a>
           <a class="nav-item nav-link" href="#speakers">Speakers</a>
           <a class="nav-item nav-link" href="#schedule">Schedule</a>
@@ -52,7 +50,7 @@
 
   <div class="container pt-4">
     <!-- about section -->
-    <div class="row">
+    <div id="about" class="row">
       <div class="col-md order-lg-2">
         <h3 class="mb-4">About Full Stack Conf</h3>
         <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/pdx.jpg" alt="portland">
@@ -162,7 +160,7 @@
     <!-- /speakers -->
 
     <!-- schedule -->
-    <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
+    <h1 id="schedule"  class="display-4 text-center my-5 text-muted">Schedule</h1>
     <ul class="list-group">
       <li class="list-group-item">
         <div class="d-flex justify-content-between">
