@@ -40,7 +40,7 @@
       <h1 class="display-2">Full Stack Conf</h1>
       <p class="lead">A One-day Conference About All Things JavaScript</p>
       <div class="btn-group mt-4" role="group" aria-label="Callout Buttons">
-        <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
         <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
       </div>
     </div>
@@ -71,13 +71,19 @@
       <div class="col-md order-lg-3">
         <h3 class="mb-4">What You'll Learn</h3>
         <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action"><strong>MongoDB</strong>: NoSQL database</a>
-            <a href="#" class="list-group-item list-group-item-action"><strong>Express</strong>: Framework for Node</a>
-            <a href="#" class="list-group-item list-group-item-action"><strong>React</strong>: JavaScript library</a>
-            <a href="#" class="list-group-item list-group-item-action"><strong>Node.js</strong>: JavaScript environment</a>
-            <a href="#" class="list-group-item list-group-item-action"><strong>ES2015</strong>: Latest version of JavaScript</a>
-            <a href="#" class="list-group-item list-group-item-action"><strong>Babel</strong>: JavaScript compiler</a>
-          </div>
+          <a href="#" class="list-group-item list-group-item-action">
+            <strong>MongoDB</strong>: NoSQL database</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <strong>Express</strong>: Framework for Node</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <strong>React</strong>: JavaScript library</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <strong>Node.js</strong>: JavaScript environment</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <strong>ES2015</strong>: Latest version of JavaScript</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <strong>Babel</strong>: JavaScript compiler</a>
+        </div>
       </div>
     </div>
     <!-- /about section -->
@@ -136,8 +142,8 @@
           <img class="card-img-top" src="img/jay.png" alt="Jay Query">
           <div class="card-body">
             <h4 class="card-title">Jay Query</h4>
-            <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript &amp; jQuery: The Missing Manual, and web
-              development teacher.</p>
+            <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript &amp; jQuery: The Missing Manual, and web development
+              teacher.</p>
           </div>
         </div>
       </div>
@@ -147,8 +153,8 @@
           <img class="card-img-top" src="img/json.png" alt="Json Babel">
           <div class="card-body">
             <h4 class="card-title">Json Babel</h4>
-            <p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programmer and 
-              likes using the right tools for the job.</p>
+            <p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programmer and likes using
+              the right tools for the job.</p>
           </div>
         </div>
       </div>
@@ -158,60 +164,60 @@
     <!-- schedule -->
     <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
     <ul class="list-group">
-        <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">Keynote: Internet of Things</h5>
-            <span class="badge badge-pill badge-info p-2">9:00am</span>
-          </div>
-          <p class="mb-1">NodeStradamus</p>
-        </li>
-        <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">React Basics</h5>
-            <span class="badge badge-pill badge-info p-2">10:00am</span>
-          </div>
-          <p class="mb-1">Vivianne McVue</p>
-        </li>
-        <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">Hey, Mongo!</h5>
-            <span class="badge badge-pill badge-info p-2">11:00am</span>
-          </div>
-          <p class="mb-1">Jay Query</p>
-        </li>
-        <li class="list-group-item list-group-item-success">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">Lunch</h5>
-            <span class="badge badge-pill badge-info p-2">12:00pm</span>
-          </div>
-          <p class="mb-1">Free pizza for everyone!</p>
-        </li>
-        <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">Introducing ES2015</h5>
-            <span class="badge badge-pill badge-info p-2">1:00pm</span>
-          </div>
-          <p class="mb-1">Ecma Scriptnstuff</p>
-        </li> 
-        <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">Getting Started With Redux</h5>
-            <span class="badge badge-pill badge-info p-2">2:00pm</span>
-          </div>
-          <p class="mb-1">Robbie Redux</p>
-        </li> 
-        <li class="list-group-item">
-          <div class="d-flex justify-content-between">
-            <h5 class="mb-1">What's Babel?</h5>
-            <span class="badge badge-pill badge-info p-2">3:00pm</span>
-          </div>
-          <p class="mb-1">Json Babel</p>
-        </li>        
-      </ul>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">Keynote: Internet of Things</h5>
+          <span class="badge badge-pill badge-info p-2">9:00am</span>
+        </div>
+        <p class="mb-1">NodeStradamus</p>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">React Basics</h5>
+          <span class="badge badge-pill badge-info p-2">10:00am</span>
+        </div>
+        <p class="mb-1">Vivianne McVue</p>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">Hey, Mongo!</h5>
+          <span class="badge badge-pill badge-info p-2">11:00am</span>
+        </div>
+        <p class="mb-1">Jay Query</p>
+      </li>
+      <li class="list-group-item list-group-item-success">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">Lunch</h5>
+          <span class="badge badge-pill badge-info p-2">12:00pm</span>
+        </div>
+        <p class="mb-1">Free pizza for everyone!</p>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">Introducing ES2015</h5>
+          <span class="badge badge-pill badge-info p-2">1:00pm</span>
+        </div>
+        <p class="mb-1">Ecma Scriptnstuff</p>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">Getting Started With Redux</h5>
+          <span class="badge badge-pill badge-info p-2">2:00pm</span>
+        </div>
+        <p class="mb-1">Robbie Redux</p>
+      </li>
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <h5 class="mb-1">What's Babel?</h5>
+          <span class="badge badge-pill badge-info p-2">3:00pm</span>
+        </div>
+        <p class="mb-1">Json Babel</p>
+      </li>
+    </ul>
     <!-- /schedule -->
 
     <!-- callout button -->
-    <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>
+    <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
 
     <!-- signup form -->
     <hr>
@@ -273,6 +279,31 @@
 
     </div>
     <!-- /container section -->
+
+    <!--=====================================
+     FORM MODAL
+    =====================================-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register for full stack conf</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            [form goes here]
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Optional JavaScript -->
