@@ -141,7 +141,8 @@
           <div class="card-body">
             <h4 class="card-title">Jay Query</h4>
             <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript &amp; jQuery: The Missing Manual, and web development
-              teacher.</p>
+              teacher.
+            </p>
           </div>
         </div>
       </div>
@@ -160,7 +161,7 @@
     <!-- /speakers -->
 
     <!-- schedule -->
-    <h1 id="schedule"  class="display-4 text-center my-5 text-muted">Schedule</h1>
+    <h1 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h1>
     <ul class="list-group">
       <li class="list-group-item">
         <div class="d-flex justify-content-between">
@@ -293,11 +294,19 @@
             </button>
           </div>
           <div class="modal-body">
-            [form goes here]
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <!-- registration form -->
+            <form>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+              </div>
+            </form>
+
+            <!-- /registration form -->
           </div>
         </div>
       </div>
