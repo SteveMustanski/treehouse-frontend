@@ -1,11 +1,13 @@
-$('#flashMessage')
+$('#flashMessage').hide()
+
+$('#previewButton').click(() => {
+  const title = $('#blogTitleInput').val();
+  const content = $('#blogContentInput').val();
+  $('#blogTitlePreview').text(title);
+  $('#blogContentPreview').html(content);
+  $('#flashMessage')
   .hide()
   .fadeIn(1000)
   .delay(3000)
   .slideUp();
-
-  const title = 'My First Blog Post'; 
-  const content = 'This is my <strong>first</strong> post!';
-
-  $('#blogTitlePreview').text(title);
-  $('#blogContentPreview').html(content);
+})
