@@ -9,7 +9,7 @@ $('.spoiler').append($button);
 $('.spoiler span').hide();
 
 // when the button is pressed show spoiler and hide button
-$('.spoiler button').click( ()=> {
+$('.spoiler button').on('click mouseleave', ()=> {
   $('.spoiler button').hide();
   $('.spoiler span').show();
 });
