@@ -1,7 +1,7 @@
 
 // create reveal spoiler button and append to page at end of spoiler class
 
-const $button = $('<button>Reveial Spoiler</button>');
+const $button = $('<button>Reveal Spoiler</button>');
 $('.spoiler').append($button);
 
 
@@ -10,9 +10,9 @@ $('.spoiler span').hide();
 
 //add the listener to the parent and listen to clicks on children
 
-$('.spoiler').on('click', 'button', () => {
-  $('.spoiler button').hide();
-  $('.spoiler span').show();
+$('.spoiler').on('click', 'button', (event) => {
+  $(event.target).hide();
+  $(event.target).prev().show();
 });
 
 
