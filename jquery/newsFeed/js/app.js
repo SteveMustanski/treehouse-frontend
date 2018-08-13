@@ -20,3 +20,8 @@ $pdfs.on('click', (event) => {
   }
 
 });
+
+$('a').each((index, link) => {
+  const url = $(link).attr('href');
+  $(link).parent().append(`(${url})`);
+})
