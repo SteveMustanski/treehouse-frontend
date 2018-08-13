@@ -9,3 +9,14 @@ $pdfs.attr('download', true);
 //add classes
 $secuereLinks.addClass('secure');
 $pdfs.addClass('pdf');
+
+$pdfs.on('click', (event) => {
+  // check if checkbox has been checked
+  // if zero are checked prevent download and alert user
+  //prevent default behavior
+  if ($(':checked').length === 0) {
+    event.preventDefault();
+    alert('please check the allow downloads to download a pdf');
+  }
+
+});
