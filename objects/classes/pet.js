@@ -6,6 +6,17 @@ class Pet {
     this.sound = sound;
   }
 
+  get activity() {
+    const today = new Date();
+    let hour = today.getHours();
+
+    if (hour > 8 && hour < 21) {
+      return 'playing';
+    } else {
+      return 'sleeping';
+    }
+  }
+
   speak() {
     console.log(this.sound);
   }
@@ -16,3 +27,4 @@ const pepper = new Pet('dog', 8, 'border terrier', 'bark!');
 
 ernie.speak();
 pepper.speak();
+console.log(pepper.activity);
