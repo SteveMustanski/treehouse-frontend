@@ -66,5 +66,25 @@ a[target="_blank"] {
     width: auto;
     display: inline-block;
   }
-
+  /* adjacent sibling selector */
+  .btn + .btn {
+    margin-left: 20px;
+  }
 }
+
+/* combinators */
+/* get links that are child of the form element */
+form > a {
+  font-size: .7em;
+}
+
+/* general sibling combinator (not commonly used */
+
+h1 ~ label {
+  background: tomato;
+  color: white;
+  padding: 5px;
+}
+
+
+
