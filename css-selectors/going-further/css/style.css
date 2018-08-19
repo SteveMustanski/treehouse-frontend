@@ -8,4 +8,12 @@ li:last-child {
   border-bottom: none;
 }
 
+/* (an+b)  b is offset of first elemet to selct, a is the cycle, n stays */
+/* you can omit a if it is one and b if it is zero */
+/* -n will go before the b value on every item */
 
+li:nth-child(3n+4) {
+  background: #52bab3;
+  color: white;
+
+}
