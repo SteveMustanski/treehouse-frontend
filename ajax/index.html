@@ -6,7 +6,26 @@
   <link rel="stylesheet" href="css/main.css">
   <title>AJAX with JavaScript</title>
   <script>
- 
+
+    let xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+        document.getElementById('ajax').innerHTML = xhr.responseText + xhr.statusText;
+        }
+      }
+    };
+    
+    xhr.open('GET', 'sidebar.html');
+
+    
+    function sendAJAX() {
+      xhr.send();
+      document.getElementById('load').style.display = "none";
+    }
+    
+
   </script>
 </head>
 <body>
