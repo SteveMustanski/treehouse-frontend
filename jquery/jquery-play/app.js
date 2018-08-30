@@ -1,5 +1,5 @@
 
-
+// set up evil global vars
 let numToEqual = 0;
 let blueVal = 4;
 let redVal = 8;
@@ -9,10 +9,12 @@ let userTot = 0;
 let losses = 0;
 let wins = 0;
 
-
+// write out the number to equal and the user total
 writeComputerTotal();
 writeUserTotal(userTot);
 
+// click events on each square 
+// update the usertotal and check for win or loss
 $("#blue").on('click', () => {
   writeUserTotal(blueVal);
   checkResults();
@@ -33,22 +35,25 @@ $("#yellow").on('click', () => {
   checkResults();
 });
 
+// function to set up and write the number to equal to the page
 function writeComputerTotal() {
   numToEqual = Math.floor(Math.random() * 100) + 1;
   $("#computerNum").text(`Target Number: ${numToEqual}`);
 }
-
+// function to add the square's value to user total and update page
 function writeUserTotal(num) {
   userTot += num;
   $("#userNum").text(`Your total: ${userTot}`);
 }
 
+// reset the computer and user totals
 function resetGame() {
   writeComputerTotal();
   userTot = 0;
   writeUserTotal(userTot);
 }
 
+// function to check the results each time user clicks
 function checkResults() {
   //if num >
   if (userTot > numToEqual) {
@@ -60,9 +65,14 @@ function checkResults() {
   resetGame();
   }
   // if num =
+  if (userTot === numToEqual){
   // alert you win
+  alert("You just won the game!!!!!")
   // add 1 to win
+  wins+=1;
   // reset num to equal and usertot
+  resetGame();
+  }
 }
 
 
