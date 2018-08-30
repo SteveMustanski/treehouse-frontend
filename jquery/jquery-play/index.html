@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <div>
-    <p id="computerNum"></p>
-  </div>
-  <div>
-      <p id="userNum"></p>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div>
+          <h2 id="computerNum"></h2>
+        </div>
+        <div>
+          <h2 id="userNum"></h2>
+        </div>
+      </div>
     </div>
 
-  <div class="gem" id="blue"></div>
-  <div class="gem" id="red"></div>
-  <div class="gem" id="green"></div>
-  <div class="gem" id="yellow"></div>
+    <div class="row justify-content-center">
+
+      <div class="gem" id="blue"></div>
+      <div class="gem" id="red"></div>
+      <div class="gem" id="green"></div>
+      <div class="gem" id="yellow"></div>
+    </div>
+  </div>
   <script src="jquery-3.2.1.min.js"></script>
   <script src="app.js"></script>
 </body>
+
 </html>
