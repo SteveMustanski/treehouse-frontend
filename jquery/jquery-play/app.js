@@ -9,9 +9,10 @@ let userTot = 0;
 let losses = 0;
 let wins = 0;
 
-// write out the number to equal and the user total
+// write out the number to equal and the user total and stats
 writeComputerTotal();
 writeUserTotal(userTot);
+writeStats();
 
 // click events on each square 
 // update the usertotal and check for win or loss
@@ -51,6 +52,12 @@ function resetGame() {
   writeComputerTotal();
   userTot = 0;
   writeUserTotal(userTot);
+  writeStats();
+}
+
+function writeStats() {
+  $('#wins').text(`Wins: ${wins}`);
+  $('#losses').text(`Losses: ${losses}`);
 }
 
 // function to check the results each time user clicks
