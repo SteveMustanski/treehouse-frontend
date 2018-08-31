@@ -38,7 +38,7 @@ $("#yellow").on('click', () => {
 
 // function to set up and write the number to equal to the page
 function writeComputerTotal() {
-  numToEqual = Math.floor(Math.random() * 100) + 1;
+  numToEqual = Math.floor(Math.random() * (100 - 20)) + 20;
   $("#computerNum").text(`Target Number: ${numToEqual}`);
 }
 // function to add the square's value to user total and update page
@@ -53,11 +53,19 @@ function resetGame() {
   userTot = 0;
   writeUserTotal(userTot);
   writeStats();
+  generateValues();
 }
 
 function writeStats() {
   $('#wins').text(`Wins: ${wins}`);
   $('#losses').text(`Losses: ${losses}`);
+}
+
+function generateValues(){
+  blueVal = Math.floor(Math.random() * 12) + 1;
+  redVal = Math.floor(Math.random() * 12) + 1;
+  greenVal = Math.floor(Math.random() * 12) + 1;
+  yellowVal = Math.floor(Math.random() * 12) + 1;
 }
 
 // function to check the results each time user clicks
