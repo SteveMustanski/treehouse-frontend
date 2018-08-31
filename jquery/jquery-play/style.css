@@ -1,3 +1,20 @@
+.container {
+  margin-top: 100px;
+  background-color:rgb(127, 189, 189);
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+#main-heading {
+  margin-top: 25px;
+}
+
+#topRow {
+  margin-top: 50px;
+}
+
 .gem {
   height: 100px;
   width:100px;
@@ -21,4 +38,10 @@
 #yellow {
   background-color: yellow;
 
+}
+
+#instructions {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid black;
 }
